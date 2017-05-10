@@ -24,18 +24,25 @@ Building iOS Apps requires a number of prerequisites in order to work correctly.
 ## Lab Steps:
 1. Download or Clone this project to your local Mac, your desktop or documents folder for example
 2. Open the Terminal
+
 3. Navigate via the CLI to root directory of the project your just downloaded e.g. `cd Desktop/SparkSDKExample`
+
 4. Enter the command in the Terminal `pod install`
+
 5. Once the `pod install` command has finished, issue the command `open SparkSDKExample.xcworkspace/`, this will cause Xcode to open
+
 6. In XCode, click on `ViewController.swift` in the Xcode left navigation panel
+
 7. Replace the text that says `“API_KEY”` with your API key from https://www.developer.ciscospark.com , ensuring that your key has “” around it. E.g. “AK54DGDG”. This API key is used to tell Spark which account is starting the call
+
 8. Replace the text that says `“RECIPIENT”` with a Spark account address or SIP URI that you wish to call. E.g. “jonfiel@cisco.com” or “sip:2123123@abcxyz.com”. The Recipient is the Spark account or SIP URI that will receive the call (the API key from step 8 cannot be from the same account as the recipient that you are calling. The reason for this is, Spark does not support calling yourself)
+
 9. Press the “Play” button top left corner of Xcode to start the App
 
-[image:TutorialAssets/playButton.png]
+![Alt text](/TutorialAssets/playButton.png "Play Button Example")
 
 
 11. The app will start in the iOS Simulator, you should then press the “Start Call“ button and it will trigger a call to be made via the Cisco Spark SDK. The iOS Simulator does not support showing a self view at the moment, so the call will just show the remote party, unless you choose to run the app on your personal iOS device (ask your proctor)
 
+![Alt text](/TutorialAssets/startCall.png "Start Call Example")
 
-[image:TutorialAssets/startCall.png]
