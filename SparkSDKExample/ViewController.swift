@@ -7,19 +7,36 @@
 //
 
 import UIKit
+import SparkSDK
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, SparkMediaViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
+    
+    @IBAction func startSparkCall(_ sender: UIButton) {
+        // Who are you?
+        let sparkMedia = SparkMediaView(authType: .sparkId ,apiKey: "API_KEY", delegate: self)
+        
+        // Who do you want to call? Is it Voice or Video?
+        sparkMedia.videoCall(recipient: "RECIPIENT_URI")
+        
+        // Where should I display the call view?
+        self.present(sparkMedia, animated: true, completion: nil)
+    }
+    
+    func callDidComplete() {
+        // Add your handling logic here
+    }
+    
+    func callFailed(withError: String) {
+        // Add your handling logic here
+    }
 
 }
 
