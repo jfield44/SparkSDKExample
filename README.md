@@ -15,9 +15,8 @@ Building iOS Apps requires a number of prerequisites in order to work correctly.
 
 * A Mac running the latest version of Mac OS X 10.12 Sierra
 	- If you are unfamiliar with updating Mac OS X you can follow the instructions here [Update the software on your Mac - Apple Support](https://support.apple.com/en-us/HT201541)
-* The latest version of XCode downloaded and *installed* via the Mac App Store (at time of writing 8.3.2 or greater)
-* Homebrew installed ( [Homebrew — The missing package manager for macOS](https://brew.sh) )
-* Cocoapods *installed* and *initial pod setup completed* (to do this, open your terminal and run the following commands):
+* The latest version of XCode downloaded and **installed** via the Mac App Store (at time of writing 8.3.2 or greater)
+* Cocoapods **installed** and **initial pod setup completed** (to do this, open your terminal and run the following commands):
 		* sudo gem install cocoapods
 		* pod setup (can take 10-15 minutes sometimes)
 
