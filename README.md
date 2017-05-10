@@ -29,7 +29,7 @@ Building iOS Apps requires a number of prerequisites in order to work correctly.
 
 4. Enter the command in the Terminal `pod install`.
 
-5. Once the `pod install` command has finished, issue the command `open SparkSDKExample.xcworkspace/`, this will cause Xcode to open.
+5. Once the `pod install` command has finished, issue the command `open SparkSDKExample.xcworkspace/`, this will cause Xcode to open. If you have not used XCode before, you may be asked to activate Developer mode on your Mac, to do this just press accept at the prompt and provide your username and password if needed.
 
 6. In XCode, click on `ViewController.swift` in the Xcode left navigation panel.
 
