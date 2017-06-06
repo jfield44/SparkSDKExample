@@ -25,13 +25,13 @@ Building iOS Apps requires a number of prerequisites in order to work correctly.
 1. Download or Clone this project to your local Mac, your desktop or documents folder for example.
 2. Open the Terminal.
 
-3. Navigate via the CLI to root directory of the project your just downloaded e.g. `cd Desktop/SparkSDKExample`.
+3. Navigate via the CLI to root directory of the project your just downloaded e.g. `cd Desktop/SparkSDKExample-master`.
 
 4. Enter the command in the Terminal `pod install`.
 
 5. Once the `pod install` command has finished, issue the command `open SparkSDKExample.xcworkspace/`, this will cause Xcode to open. If you have not used XCode before, you may be asked to activate Developer mode on your Mac, to do this just press accept at the prompt and provide your username and password if needed.
 
-6. In XCode, click on `ViewController.swift` in the Xcode left navigation panel.
+6. In XCode, click on `ViewController.swift` in the Xcode left navigation panel. (If this is your first time in the project, you may need to expand the 'SparkSDKExample' by clicking on the 'disclosure triangle' in the left panel).
 
 7. Replace the text that says `“API_KEY”` with your API key from https://www.developer.ciscospark.com , ensuring that your key has “” around it. E.g. “AK54DGDG”. This API key is used to tell Spark which account is starting the call.
 
@@ -42,7 +42,7 @@ Building iOS Apps requires a number of prerequisites in order to work correctly.
 ![Alt text](/TutorialAssets/playButton.png "Play Button Example")
 
 
-11. The app will start in the iOS Simulator, you should then press the “Start Call“ button and it will trigger a call to be made via the Cisco Spark SDK. The iOS Simulator does not support showing a self view at the moment, so the call will just show the remote party, unless you choose to run the app on your personal iOS device (ask your proctor).
+11. The app will start in the iOS Simulator, you should then press the “Start Call“ button and it will trigger a call to be made via the Cisco Spark SDK. The iOS Simulator does not support showing a self view at the moment, so the call will just show the remote party (recieve video but not display self view), unless you choose to run the app on your personal iOS device (ask your proctor).
 
 ![Alt text](/TutorialAssets/startCall.png "Start Call Example")
 
