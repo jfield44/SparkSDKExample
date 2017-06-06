@@ -6,5 +6,5 @@ target 'SparkSDKExample' do
   use_frameworks!
 
   # Pods for SparkSDKExample
-  pod 'SparkSDK', '~> 1.1'
+  pod 'SparkSDK', '1.1'
 end
